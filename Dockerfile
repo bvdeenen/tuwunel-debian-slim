@@ -5,4 +5,5 @@ RUN curl -L https://github.com/matrix-construct/tuwunel/releases/download/v1.4.2
 -o tuwunel.deb
 RUN ar p tuwunel.deb data.tar.gz | tar xz
 RUN apt install -y procps
+EXPOSE 8008
 CMD ["tuwunel"]
